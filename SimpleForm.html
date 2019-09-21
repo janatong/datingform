@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style type="text/css">
+            .tg {
+              border-collapse: collapse;
+              border-spacing: 0;
+              margin: 0px auto;
+            }
+            .tg td {
+              font-family: Arial, sans-serif;
+              font-size: 14px;
+              padding: 10px 5px;
+              overflow: hidden;
+              word-break: normal;
+              border-color: black;
+            }
+            .tg th {
+              font-family: Arial, sans-serif;
+              font-size: 14px;
+              font-weight: normal;
+              padding: 10px 5px;
+              overflow: hidden;
+              word-break: normal;
+              border-color: black;
+            }
+            .tg .tg-cly1 {
+              text-align: left;
+              vertical-align: middle;
+            }
+            .tg .tg-rykj {
+              font-size: 14px;
+              text-align: left;
+              vertical-align: middle;
+            }
+      <!---->
+            input[type="text"]:hover {
+              background-color: #ffff66;
+              border-color: #999999;
+            }
+      <!---->
+    </style>
+  </head>
+  <body>
+    <form action="https://learn.nucamp.co/show_everything.php" method="POST">
+      <table class="tg">
+        <tr>
+          <td class="tg-rykj"><label for="firstname">First Name: </label></td>
+          <td class="tg-cly1">
+            <input type="text" id="firstname" name="firstname" />
+          </td>
+        </tr>
+        <tr>
+          <td class="tg-cly1"><label for="lastname">Last Name:</label></td>
+          <td class="tg-cly1">
+            <input type="text" id="lastname" name="lastname" />
+          </td>
+        </tr>
+        <tr>
+          <td class="tg-cly1"><lable for="email">Email:</lable></td>
+          <td class="tg-cly1">
+            <input type="email" id="email" name="email" />
+          </td>
+        </tr>
+        <tr>
+          <td class="tg-cly1"><label for="address">Address:</label></td>
+          <td class="tg-cly1">
+            <textarea rows="3" cols="60" id="address" name="address"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="tg-cly1">Please enter any feedback you have.</td>
+          <td class="tg-cly1">
+            <textarea
+              rows="3"
+              cols="60"
+              name="feedback"
+              placeholder="Please enter your text here"
+            >
+            </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="tg-cly1"></td>
+          <td class="tg-cly1"><input type="submit" value="Send" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

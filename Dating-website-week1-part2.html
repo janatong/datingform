@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dating Website</title>
+    <style>
+      fieldset {
+        background-color: lightyellow;
+        border: 10px solid yellow;
+        margin-bottom: 10px;
+        width: 720px;
+      }
+      label {
+        width: 180px;
+        display: inline-block;
+        text-align: right;
+        vertical-align: top;
+      }
+      #male {
+        width: 40px;
+        display: inline-block;
+        text-align: right;
+        vertical-align: top;
+      }
+
+      .low {
+        display: inline-block;
+        width: 60px;
+        padding-right: 10px;
+        padding-left: 10px;
+        background-color: darkred;
+        color: white;
+        text-align: center;
+      }
+      .high {
+        display: inline-block;
+        width: 60px;
+        padding-right: 10px;
+        padding-left: 10px;
+        background-color: darkslateblue;
+        color: white;
+        text-align: center;
+      }
+      label:hover {
+        font-size: 20px;
+      }
+      input:hover {
+        font-size: 20px;
+      }
+      .radio:hover {
+        font-size: 30px;
+      }
+      .range:hover {
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Please Enter Your Details For Our Dating Website</h1>
+    <form
+      method="post"
+      enctype="multipart/form-data"
+      action="https://learn.nucamp.co/show_everything.php"
+    >
+      <fieldset>
+        <legend>Your Face</legend>
+        <label for="avatar">Your Image:</label
+        ><input type="file" name="avatar" id="avatar" required />
+        <p>
+          <label for="preview">Image Preview:</label><img src="" id="preview" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Your General Details</legend>
+        <p>
+          <label for="name">Name:</label
+          ><input type="text" name="name" id="name" required />
+        </p>
+        <p>
+          <label for="gender">Gender:</label>
+          Male<input
+            class="radio"
+            type="radio"
+            name="gender"
+            id="male"
+            value="male"
+            required
+          />
+          Female<input
+            class="radio"
+            type="radio"
+            name="gender"
+            id="female"
+            value="female"
+            required
+          />
+        </p>
+        <p>
+          <label for="age">Age:</label
+          ><input type="number" name="age" id="age" required />
+        </p>
+        <p>
+          <label for="dob">Date of Birth:</label
+          ><input type="date" name="dob" id="dob" />
+        </p>
+        <p>
+          <label for="color">Color:</label
+          ><input type="color" name="color" id="color" />
+        </p>
+        <label for="country">Which Country</label>
+        <select name="country" id="country">
+          <option value="" selected></option>
+          <option value="US">America</option>
+          <option value="CH">China</option>
+          <option value="EN">England</option>
+          <option value="FR">French</option>
+          <option value="JP">Japan</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Your Indicators</legend>
+        <p>
+          <label for="height">Height:</label><span class="low">Short</span
+          ><input
+            class="range"
+            type="range"
+            name="height"
+            id="height"
+            min="0"
+            max="100"
+            step="5"
+            value="50"
+          /><span class="high">Tall</span>
+        </p>
+        <p>
+          <label for="salary">Salary:</label><span class="low">Poor</span
+          ><input
+            type="range"
+            name="salary"
+            id="salary"
+            min="0"
+            max="100"
+            step="5"
+            value="50"
+          /><span class="high">Rich</span>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Your Contact Information</legend>
+        <p>
+          <label for="mobile">Mobile:</label
+          ><input type="tel" name="mobile" id="mobile" />
+        </p>
+        <p>
+          <label for="address">Address:</label
+          ><textarea name="address" id="address" row="3" cols="20"></textarea>
+        </p>
+        <p>
+          <label for="contactM">Method to contact you:</label>
+          <input
+            type="checkbox"
+            name="contactM"
+            id="contactemail"
+            value="email"
+          />Email
+          <input
+            type="checkbox"
+            name="contactM"
+            id="whatsapp"
+            value="Whatsapp"
+          />Whatsapp
+          <input
+            type="checkbox"
+            name="contactM"
+            id="appchat"
+            value="appchat"
+          />In-app Chat
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" value="Submit" />
+      </p>
+    </form>
+    <script src="https://url.nucamp.co/datingjs"></script>
+  </body>
+</html>
